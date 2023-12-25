@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/blood.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/plugin/highlight/monokai.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-transition="slide-in fade-out">
+        <img src="images/svelte.png" alt="svelte logo"
+          style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        <h6>Transformando el Desarrollo Web con Svelte.js</h6>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <section data-transition="slide-in fade-out">
+          <h6 style="color: rgba(255, 69, 1, 0.952);">¿Que es Svelte?</h6>
+        </section>
+        <section data-transition="slide-in fade-out">
+          <h6>Rich Harris</h6>
+          <img src="images/rich-harris.png" alt="rich harris"
+            style="height: 480px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+        <section data-transition="slide-in fade-out">
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Popularidad
+            del Framework</h6>
+          <img src="images/popularidad-uso.png" alt="" class="fragment" data-fragment-index="1"
+            style="height: 600px; margin: 0 auto 4rem auto; background: transparent;">
+        </section>
+        <section>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Popularidad
+            del Framework</h6>
+          <img src="images/popularidad-interes.png" alt="" class="fragment" data-fragment-index="1"
+            style="height: 600px; margin: 0 auto 4rem auto; background: transparent;">
+        </section>
+      </section>
+
+      <section data-auto-animate>
+        <section>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Caracteristicas</h6>
+          <p>Escribe menos codigo</p>
+          <pre data-id="code-animation">
+						<code class="hljs javascript" data-trim data-line-numbers>
+							// React
+							import { useEffect, useState } from "react";
+
+							export default function Name() {
+								const [name, setName] = useState("John");
+
+								useEffect(() => {
+									setName("Jane");
+								}, []);
+
+								return <h1>Hello {name}</h1>;
+							} 						
+						</code>
+					</pre>
+        </section>
+
+        <section>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Caracteristicas</h6>
+          <p>Escribe menos codigo</p>
+          <pre data-id="code-animation">
+					<code class="hljs language-html" data-trim data-line-numbers>					
+						<script>
+              // Svelte
+              let name = "John";
+              name = "Jane";
+            </script>
+            
+							<h1>Hello {name}</h1>
+					</code>
+					</pre>
+        </section>
+
+        <section data-transition="slide-in fade-out">
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Compilador</h6>
+          <img src="images/compilador.png" alt="svelte logo"
+            style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <section data-auto-animate>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">API Svelte</h6>
+          <ul>
+            <li>DOM Events</li>
+            <li>Tansitions</li>
+            <li>Motions</li>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">API Svelte</h6>
+          <ul>
+            <li>DOM Events</li>
+            <li>Await Blocks</li>
+            <li>Tansitions</li>
+            <li>Reactive</li>
+            <li>Motions</li>
+          </ul>
+        </section>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <section data-transition="slide-in fade-out">
+          <h6 style="color: rgba(255, 69, 1, 0.952);">¿Que se necesita para aprender Svelte?</h6>
+          <img src="images/html_css_js.png" alt=""
+            style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+        <section data-transition="slide-in fade-out">
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Otras Herramientas</h6>
+          <p class="fragment" data-fragment-index="1">Git y Github (Control de versiones y repositorios)</p>
+          <img src="images/git-github.png" class="fragment" data-fragment-index="2" alt=""
+            style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+        <section data-transition="slide-in fade-out">
+          <p class="fragment" data-fragment-index="1">Node.js (Entorno de ejecucion)</p>
+          <img src="images/node.png" class="fragment" data-fragment-index="2" alt=""
+            style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+        <section data-transition="slide-in fade-out">
+          <p class="fragment" data-fragment-index="1">Vite (Generacion de proyectos)</p>
+          <img src="images/vite.png" class="fragment" data-fragment-index="2" alt=""
+            style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+        <section data-transition="slide-in fade-out">
+          <p class="fragment" data-fragment-index="1">Npm, Pnpm o yarn (Gestor de dependencias)</p>
+          <img src="images/npm-pnpm-yarn.png" class="fragment" data-fragment-index="2" alt=""
+            style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">¿Donde aprender Svelte?</h6>
+          <img src="images/svelte-dev.png" alt="svelte logo"
+            style="height: 400px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+          <p><a href="https://svelte.dev" style="text-decoration: none; color: white;" target="_blank"></p>
+          Svelte Dev</a>
+        </section>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <section data-auto-animate>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Conoce mas fuentes</h6>
+          <ul>
+            <li><a href="https://learn.svelte.dev/tutorial/welcome-to-svelte"
+                style="text-decoration: none; color: white;">Learn Svelte</li></a>
+            <li><a href="https://sveltesociety.dev" style="text-decoration: none; color: white;">Svelte
+                Society</li></a>
+            <li><a href="https://theme-selection.medium.com/the-most-popular-javascript-frameworks-in-2021-a2fe62174df6"
+                style="text-decoration: none; color: white;">The most popular javascript framework</li>
+            </a>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <h6 style="color: rgba(255, 69, 1, 0.952);">Conoce mas fuentes</h6>
+          <ul>
+            <li><a href="https://learn.svelte.dev/tutorial/welcome-to-svelte"
+                style="text-decoration: none; color: white;">Learn Svelte</li></a>
+            <li><a
+                href="https://2022.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_experience_linechart"
+                style="text-decoration: none; color: white;">Front-End Framework</li></a>
+            <li><a href="https://sveltesociety.dev" style="text-decoration: none; color: white;">Svelte
+                Society</li></a>
+            <li><a href="https://github.com/sveltejs" style="text-decoration: none; color: white;">Svelte
+                Github</li></a>
+            <li><a href="https://theme-selection.medium.com/the-most-popular-javascript-frameworks-in-2021-a2fe62174df6"
+                style="text-decoration: none; color: white;">The most popular javascript framework</li>
+            </a>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from 'reveal.js';
+    import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+    import RevealHighlight from 'reveal.js/plugin/highlight/highlight.js';
+    // import RevealMath from 'reveal.js/plugin/math/math.js';
+    // import RevealNotes from 'reveal.js/plugin/notes/notes.js';
+    // import RevealZoom from 'reveal.js/plugin/zoom/zoom.js';
+    // import RevealSearch from 'reveal.js/plugin/search/search.js';
+
+    let deck = new Reveal({
+      plugins: [Markdown, RevealHighlight]
+    });
+
+    deck.initialize();
+  </script>
+
+</body>
+
+</html>
